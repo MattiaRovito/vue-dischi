@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
+import Header from '@/components/Header.vue';
+import Main from '@/components/Main.vue';
 
 
 
@@ -22,5 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/style/commons.scss'
+
+  @import '@/style/commons.scss';
+
 </style>

@@ -2,9 +2,9 @@
   <div class="bg-spotify">
       <div class="container">
           <div class="row">
-              <!-- <div class="col-2" v-for="song in songs"> -->
-
-              <!-- </div> -->
+              <div class="col-4" v-for="song in songs" :key="song.title">
+                  <MainList :details="song"/>
+              </div>
           </div>
       </div>
   </div>
@@ -12,12 +12,13 @@
 
 <script>
 import axios from 'axios';
+import MainList from '@/components/MainList.vue';
 
 export default {
     name: 'Main',
-    // components : {
-    //     // MainList
-    // },
+    components : {
+        MainList
+    },
     data(){
         return {
             apiURL : 'https://flynn.boolean.careers/exercises/api/array/music',
@@ -33,7 +34,7 @@ export default {
                 .get(this.apiURL)
                 .then(res =>{
                     console.log(res.data);
-                    this.songs= res.data;
+                    this.songs = res.data.response;
                     console.log(this.songs);
                 })
         }
