@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-      <!-- <i class="fab fa-spotify"></i> -->
+    <img src="@/assets/img/logo.png" alt="logo spotify">
   </div>
 </template>
 
@@ -16,6 +16,13 @@ export default {
 {
     background-color: #2e3a46;
     height: 80px;
+    padding: 18px;
+
+    img
+    {
+        width: 3%;
+        margin-left: 30px;
+    }
 }
 
 </style>

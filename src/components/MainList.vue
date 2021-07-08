@@ -4,6 +4,7 @@
       <h2 class="fw-bold">{{details.title}}</h2>
       <p class="m-0 mt-1">{{details.author}}</p>
       <p>{{details.year}}</p>  
+      
   </div>
 </template>
 
