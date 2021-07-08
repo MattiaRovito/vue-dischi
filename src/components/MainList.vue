@@ -1,6 +1,6 @@
 <template>
   <div class="text-center mt-4 box">
-      <img class="mb-2" :src="details.poster" alt="details.title">
+      <img class="mb-2 img-fluid" :src="details.poster" alt="details.title">
       <h2 class="fw-bold">{{details.title}}</h2>
       <p class="m-0 mt-1">{{details.author}}</p>
       <p>{{details.year}}</p>  
@@ -18,7 +18,6 @@ export default {
     
     .box
     {
-        color: white;
         background-color: #2e3a46;
         padding: 20px;
         width: 200px;
@@ -31,7 +30,13 @@ export default {
 
         h2 
         {
+            color: white;
             font-size: 18px;
+        }
+
+        p
+        {
+            color: #807f7b;
         }
     }
 

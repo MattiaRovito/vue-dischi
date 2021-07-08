@@ -2,7 +2,7 @@
   <div class="bg-spotify">
       <div class="container">
           <div class="row">
-              <div class="col-3" v-for="song in songs" :key="song.title">
+              <div class="col" v-for="song in songs" :key="song.title">
                   <MainList :details="song"/>
               </div>
           </div>
