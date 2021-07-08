@@ -2,7 +2,7 @@
   <div class="bg-spotify">
       <div class="container">
           <div class="row">
-              <div class="col-4" v-for="song in songs" :key="song.title">
+              <div class="col-3" v-for="song in songs" :key="song.title">
                   <MainList :details="song"/>
               </div>
           </div>
@@ -46,9 +46,7 @@ export default {
 
 .bg-spotify
 {
-    background-color: #1e2d3b;
-    height: calc(100vh - 80px); 
-    
+    background-color: #1e2d3b;    
 }
 
 
