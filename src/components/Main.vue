@@ -1,6 +1,8 @@
 <template>
   <div class="bg-spotify">
       <div class="container">
+
+
           <div class="row" v-if="!loading">
               <div class="col" v-for="song in songs" :key="song.title">
                   <MainList :details="song"/>
@@ -15,6 +17,7 @@
 import axios from 'axios';
 import MainList from '@/components/MainList.vue';
 import Loader from '@/components/Loader.vue';
+
 
 export default {
     name: 'Main',
@@ -48,6 +51,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
 
 .bg-spotify
 {
